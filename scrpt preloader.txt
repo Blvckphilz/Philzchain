@@ -1,0 +1,9 @@
+<script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.querySelector('.preloader').style.display = 'none';
+
+                document.getElementById('content-placeholder').style.display = 'block';
+            }, 1000);
+        });
+    </script>

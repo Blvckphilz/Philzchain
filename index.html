@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philzchain</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b5534c6292.js" crossorigin="anonymous"></script>
+    
+<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- <div class="content-placeholder" style="width: 100%; height: 100%; background-color: white; position:relative; z-index: 999;">
+        <div class="preloader"style="width: 100%;height: 100%; background-color: white;" >
+            <img src="img/philzchain preloader.gif" alt="" style=" height: 100%; width: 100%;">
+        </div>
+    </div> -->
+
+    <nav style="background-color:#349400; margin-bottom: 0%; position: fixed;z-index: 5;">
+        <div class="nav-wrapper container">
+            <a href="" class="brand-logo">
+                <img src="img/mine logo/philzchain.png" alt="" style="width: 73px;">
+            </a>
+            <a href="" class="sidenav-trigger" data-target="menu"> <i class="material-icons">menu</i> </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="">Home</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Download</a></li>
+                <li><a href="">Buy Crypto</a></li>
+                <li><a href=""class="dropdown-trigger" data-target="s&k1">Stake & Earn <img src="img/icons/curve down.svg" alt="" style="position: relative; top: 10px; color: white;" ></a></li>
+                <li><a href="" class="dropdown-trigger" data-target="asset1">Assets <img src="img/icons/curve down.svg" alt="" style="position: relative; top: 10px; color: white;"></a></li>
+                <li><a href="">Support</a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="" class="btn white " style="border-radius: 50px; color:#349400">Download</a></li>
+            </ul>
+
+
+        </div>
+
+        <ul class="dropdown-content" id="s&k1" style="background-color: #4ec210;">
+            <li><a href="" style="color: #ffffff;">Ethereum</a></li>
+            <li><a href="" style="color: #ffffff;">Cardano</a></li>
+            <li><a href="" style="color: #ffffff;">Solana</a></li>
+            <li><a href="" style="color: #ffffff;">Polygon</a></li>
+            <li><a href="" style="color: #ffffff;">Cosmos</a></li>
+            <li><a href="" style="color: #ffffff;">Hedera</a></li>
+            <li><a href="" style="color: #ffffff;">Kava</a></li>
+            <li><a href="" style="color: #ffffff;">Terra Classic</a></li>
+            <li><a href="" style="color: #ffffff;">Osmosis</a></li>
+        </ul>
+        <ul class="dropdown-content" id="asset1" style="padding-top: 90px;background-color: #4ec210;">
+            <li><a href="" style="color: #ffffff;">Ethereum</a></li>
+            <li><a href="" style="color: #ffffff;">Cardano</a></li>
+            <li><a href="" style="color: #ffffff;">Solana</a></li>
+            <li><a href="" style="color: #ffffff;">Polygon</a></li>
+            <li><a href="" style="color: #ffffff;">Cosmos</a></li>
+        </ul>
+    </nav>
+    <ul class="sidenav" id="menu"  style="background-color: #ffffff;">
+        <li><a href="" class="green-text">Home</a></li>
+        <li><a href="" class="green-text">Dashboard</a></li>
+        <li><a href="" class="green-text">Download</a></li>
+        <li><a href="" class="green-text">Buy Crypto</a></li>
+        <li><a href="" class="green-text dropdown-trigger" data-target="s&k">Stake & Earn </a></li>
+        <li><a href="" class="green-text dropdown-trigger" data-target="asset" >Assets</a></li>
+        <li><a href="" class="green-text">Support</a></li>
+        <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="" class="btn " style="background-color: #349400; border-radius: 100px;">Download</a></li>
+    </ul>
+
+            <ul class="dropdown-content" id="s&k" style="background-color: #4ec210;">
+                <li><a href="" style="color: #ffffff;background-color: #4ec210;">Ethereum</a></li>
+                <li><a href="" style="color: #ffffff;background-color: #4ec210;">Cardano</a></li>
+                <li><a href="" style="color: #ffffff;background-color: #4ec210;">Solana</a></li>
+                <li><a href="" style="color: #ffffff;background-color: #4ec210;">Polygon</a></li>
+                <li><a href="" style="color: #ffffff;background-color: #4ec210;">Cosmos</a></li>
+                <li><a href="" style="color: #ffffff;background-color: #4ec210;">Hedera</a></li>
+                <li><a href="" style="color: #ffffff;background-color: #4ec210;">Kava</a></li>
+                <li><a href="" style="color: #ffffff;background-color: #4ec210;">Terra Classic</a></li>
+                <li><a href="" style="color: #ffffff;background-color: #4ec210;">Osmosis</a></li>
+            </ul>
+            <ul class="dropdown-content" id="asset" style="padding-top: 90px;background-color: #4ec210;">
+                <li><a href="" style="color: #ffffff;background-color: #4ec210;">Ethereum</a></li>
+                <li><a href="" style="color: #ffffff;background-color: #4ec210;">Cardano</a></li>
+                <li><a href="" style="color: #ffffff;background-color: #4ec210;">Solana</a></li>
+                <li><a href="" style="color: #ffffff;background-color: #4ec210;">Polygon</a></li>
+                <li><a href="" style="color: #ffffff;background-color: #4ec210;">Cosmos</a></li>
+            </ul>
+
+            
+    <div style="background-color: #4ec210; margin-top: 0%; margin-bottom: 0%;" class="hide-on-med-and-down">        
+    <div class="container" >
+        <div class="row" style="margin-bottom: 0%; margin-top: 0%;">
+            <div class="col l6 "><br><br>
+                <h1 class=""  style="color: #ffffff;font-weight: 700;"> Crypto Wallet For Buying, Staking & Swapping</h1>
+                <p> Manage your Bitcoin, Ethereum, XPR, Litecoin, USDT, and over 1000+ other coins and tokens.</p>
+                <div class="row" style="margin-bottom: 0%; margin-top: 0%;">
+                    <div class="col l4 s4 m4"><a href=""><img src="img/icons/secure.svg" alt=""></a></div>
+                    <div class="col l4 s4 m4"><a href=""><img src="img/icons/decentral.svg" alt=""></a></div>
+                    <div class="col l4 s4 m4"><a href=""><img src="img/icons/anon.svg" alt=""></a></div>
+                </div>
+                <a href="signin.html" class="btn" style="background-color:white;color: #349400;border-radius: 50px;font-weight: 500; height: 50px;text-align: center; padding-top: 10px; "> <b>Get Started</b></a>
+                <p>Trusted by 5,000,000 users worldwide</p>
+            </div>
+            <div class="col l6 hide-on-med-and-down animate__animated animate__pulse animate__infinite	animate__slow">
+                <img src="img/cryptocurrency_bitcoin_wallet.webp" alt="" style="width: 100%; margin-top: 100px;" >
+            </div>
+            <div class="col s12 m12 hide-on-large-only center" style="margin-bottom: 0%;">
+                <img src="img/phone trade.png" alt="" style="width: 50%; margin-top: 100px;" >
+            </div>
+        </div>
+    </div>
+
+</div>  
+    <div style="background-color: #4ec210; margin-top: 0%; margin-bottom: 0%;" class="hide-on-large-only">        
+    <div class="container" >
+        <div class="row" style="margin-bottom: 0%; margin-top: 0%;">
+            <div class="col s12 m12 center"><br><br>
+                <h1 class=""  style="font-size: 60px; color: #ffffff;font-weight: 700;"> Crypto Wallet For Buying, Staking & Swapping</h1>
+                <p style="font-size: 25px;"> Manage your Bitcoin, Ethereum, XPR, Litecoin, USDT, and over 1000+ other coins and tokens.</p>
+                <div class="col m12 s12" style="margin-bottom: 0%; margin-top: 0%;">
+                    <img src="img/google-play-icon.svg" alt="">
+                    <img src="img/appstore-icon.svg" alt="">
+                    <img src="img/DownloadAPK andriod.svg" alt="">
+                <br> <br></div>
+                <a href="signin.html" class="btn" style="background-color:white;color: #349400;border-radius: 50px;font-weight: 500; height: 50px;text-align: center; padding-top: 10px;"> <b>Get Started</b></a>
+                <p style="font-size: 25px;font-size: 25px;">Trusted by 5,000,000 users worldwide</p>
+            </div>
+
+            <div class="col s12 m12 hide-on-large-only center" style="margin-bottom: 0%;">
+                <img src="img/phone trade.png" alt="" style="width: 50%; margin-top: 10px;margin-bottom: 10px;" >
+            </div>
+        </div>
+    </div>
+</div>  
+
+
+
+
+<div style="background-color:#D3FFBB; margin-top: 0%; margin-bottom: 0%;"> 
+ <div class="container center" style="margin-top: 0%;">
+    <div class="container center"  style="margin-top: 0%;">
+        <h1 style="font-weight: 700; margin-top: 0%"> Trusted Reviews</h1>
+    </div> 
+
+    <section class="splide" aria-label="Basic Structure Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+                <div class="card container left-align" style="padding-left: 15px;padding-right: 10px;padding-bottom: 50px;padding-top: 20px;background-color: #ffffff;">
+                    <img src="img/Surfchain - Best Cryptocurrency Wallet for Mobile, Desktop_ Bitcoin and Altcoins_files/no-avatar.webp" alt="" width="20%" style="border-radius: 50px;">
+                    <br>
+                    <span><b> FATEOFCRYPTO</b></span>
+                    <br>
+                    <br>
+                    <img src="img/stars (1).svg" alt="" style="color: #349400;">
+                    <hr>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quaerat corrupti iste dolorum quam voluptatibus maiores odio, dolores porro minima, quidem in illum, incidunt deleniti doloribus. Dolorum repellat vitae, qui tempora aliquid odio earum assumenda, atque velit, esse magni commodi?
+                    </p>
+                </div>   
+            </li>
+
+            <li class="splide__slide">
+                <div class="card container left-align" style="padding-left: 15px;padding-right: 10px;padding-bottom: 50px;padding-top: 20px;background-color: #ffffff;">
+                    <img src="img/Surfchain - Best Cryptocurrency Wallet for Mobile, Desktop_ Bitcoin and Altcoins_files/no-avatar.webp" alt="" width="20%" style="border-radius: 50px;">
+                    <br>
+                    <span><b> FATEOFCRYPTO</b></span>
+                    <br>
+                    <br>
+                    <img src="img/stars (1).svg" alt="" style="color: #349400;">
+                    <hr>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quaerat corrupti iste dolorum quam voluptatibus maiores odio, dolores porro minima, quidem in illum, incidunt deleniti doloribus. Dolorum repellat vitae, qui tempora aliquid odio earum assumenda, atque velit, esse magni commodi?
+                    </p>
+                </div>   
+            </li>
+
+            <li class="splide__slide">
+                <div class="card container left-align" style="padding-left: 15px;padding-right: 10px;padding-bottom: 50px;padding-top: 20px;background-color: #ffffff;">
+                    <img src="img/Surfchain - Best Cryptocurrency Wallet for Mobile, Desktop_ Bitcoin and Altcoins_files/no-avatar.webp" alt="" width="20%" style="border-radius: 50px;">
+                    <br>
+                    <span><b> FATEOFCRYPTO</b></span>
+                    <br>
+                    <br>
+                    <img src="img/stars (1).svg" alt="" style="color: #349400;">
+                    <hr>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quaerat corrupti iste dolorum quam voluptatibus maiores odio, dolores porro minima, quidem in illum, incidunt deleniti doloribus. Dolorum repellat vitae, qui tempora aliquid odio earum assumenda, atque velit, esse magni commodi?
+                    </p>
+                </div>   
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+    
+ 
+
+    <div class="center" style="font-size: 60px;">
+        <h1 style="font-weight: 700"> Stake and Earn</h1>
+    </div>
+    <div class="card">
+        <table class="striped container">
+            <thead> 
+                <tr>
+                    <th> Name </th>
+                    <th> APY </th>
+                    <th> Market Cap </th>
+                    <th> Price </th>
+                    <th> 24h % </th>
+                </tr>
+            </thead> 
+            <tbody>
+                <tr>
+                    <td>  Ethereum ETH </td>
+                    <td> +5% </td>
+                    <td class="blue-text"> $401.2B </td>
+                    <td class="blue-text"> $3341.56 </td>
+                    <td class="red-text"> -4.28 </td>
+                    <td><a href="" class="btn" style="background-color: #349400;border-radius: 50px;">Stake Now</a></td>
+                </tr>
+                <tr>
+                    <td>  Ethereum ETH </td>
+                    <td> +5% </td>
+                    <td class="blue-text"> $401.2B </td>
+                    <td class="blue-text"> $3341.56 </td>
+                    <td class="red-text"> -4.28 </td>
+                    <td><a href="" class="btn"style="background-color: #349400;border-radius: 50px;">Stake Now</a></td>
+                </tr>
+                <tr>
+                    <td>  Ethereum ETH </td>
+                    <td> +5% </td>
+                    <td class="blue-text"> $401.2B </td>
+                    <td class="blue-text"> $3341.56 </td>
+                    <td class="red-text"> -4.28 </td>
+                    <td><a href="" class="btn"style="background-color: #349400;border-radius: 50px;">Stake Now</a></td>
+                </tr>
+                <tr>
+                    <td>  Ethereum ETH </td>
+                    <td> +5% </td>
+                    <td class="blue-text"> $401.2B </td>
+                    <td class="blue-text"> $3341.56 </td>
+                    <td class="red-text"> -4.28 </td>
+                    <td><a href="" class="btn"style="background-color: #349400;border-radius: 50px;">Stake Now</a></td>
+                </tr>
+                <tr>
+                    <td>  Ethereum ETH </td>
+                    <td> +5% </td>
+                    <td class="blue-text"> $401.2B </td>
+                    <td class="blue-text"> $3341.56 </td>
+                    <td class="red-text"> -4.28 </td>
+                    <td><a href="" class="btn"style="background-color: #349400;border-radius: 50px;">Stake Now</a></td>
+                </tr>
+                <tr>
+                    <td>  Ethereum ETH </td>
+                    <td> +5% </td>
+                    <td class="blue-text"> $401.2B </td>
+                    <td class="blue-text"> $3341.56 </td>
+                    <td class="red-text"> -4.28 </td>
+                    <td><a href="" class="btn"style="background-color: #349400;border-radius: 50px;">Stake Now</a></td>
+                </tr>
+                <tr>
+                    <td>  Ethereum ETH </td>
+                    <td> +5% </td>
+                    <td class="blue-text"> $401.2B </td>
+                    <td class="blue-text"> $3341.56 </td>
+                    <td class="red-text"> -4.28 </td>
+                    <td><a href="" class="btn"style="background-color: #349400;border-radius: 50px;">Stake Now</a></td>
+                </tr>
+                <tr>
+                    <td>  Ethereum ETH </td>
+                    <td> +5% </td>
+                    <td class="blue-text"> $401.2B </td>
+                    <td class="blue-text"> $3341.56 </td>
+                    <td class="red-text"> -4.28 </td>
+                    <td><a href="" class="btn"style="background-color: #349400;border-radius: 50px;">Stake Now</a></td>
+                </tr>
+                <tr>
+                    <td>  Ethereum ETH </td>
+                    <td> +5% </td>
+                    <td class="blue-text"> $401.2B </td>
+                    <td class="blue-text"> $3341.56 </td>
+                    <td class="red-text"> -4.28 </td>
+                    <td><a href="" class="btn"style="background-color: #349400;border-radius: 50px;">Stake Now</a></td>
+                </tr>
+                <tr>
+                    <td>  Ethereum ETH </td>
+                    <td> +5% </td>
+                    <td class="blue-text"> $401.2B </td>
+                    <td class="blue-text"> $3341.56 </td>
+                    <td class="red-text"> -4.28 </td>
+                    <td><a href="" class="btn"style="background-color: #349400;border-radius: 50px;">Stake Now</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="center" >
+        <h1 style="font-size: 60px; font-weight: 700;">Manage your portifolio</h1>
+        <p style="font-size: 25px;font-weight: lighter;color: hsl(0, 0%, 58%);">Manage, Swap, Buy and Stake your favorite assets. Securely hold your NFTs and 1000+ other coins and tokens. Sort your portfolio by amount and value.</p>
+        <img src="img/cryptocurrency_bitcoin_wallet.webp" alt="" style="width: 100%;" >
+    </div>
+
+ </div>
+</div>
+
+<div class="container" style="margin-top: 60px;">
+    <div class="row">
+        <div class="col l6 s12 m12">
+            <h1 style="font-size: 45px; font-weight: 700;padding-top: 60px;">Instant Swap with Cashback</h1>
+            <p style="font-size: 25px; color: rgb(148, 148, 148);">Swap 60+ crypto pairs anonymously and receive a cash back</p>
+            <a href="" class="btn blue white-text" style="border-radius: 20px;font-weight: 500;">swap Now</a>
+        </div>
+        <div class="col l6 s12 m12 center">
+            <img src="img/cashback.svg" alt=""  style="width: 100%;" data-aos="fade-down"> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col l6 s12 m12 center ">
+            <img src="img/buy-crypto.svg" alt="" style="width: 100%;" data-aos="fade-down">
+        </div>
+        <div class="col l6 s12 m12 container">
+            <h1 style="font-size: 45px; font-weight: 700;">Buy Crypto</h1>
+            <p style="font-size: 25px; color: rgb(148, 148, 148);">Buy Bitcoin, Ethereum, SOL, XRP, ADA, DOT, USDT, BUSD and other coins with your bank card. We accept USD, EUR, and your local currency worldwide</p>
+            <a href="" class="btn blue white-text" style="border-radius: 20px;font-weight: 500;">Buy Now</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col l6 s12 m12">
+            <h1 style="font-size: 45px; font-weight: 700;">Stake and earn</h1>
+            <p style="font-size: 25px; color: rgb(148, 148, 148);">Get rewards on staking ETH, ADA, BNB, SOL, TRX, NEAR, XTZ, HBAR and other coins with 5-20% APR.</p>
+            <a href="" class="btn blue white-text" style="font-weight: 500;border-radius: 20px;">Stake Now</a>
+        </div>
+        <div class="col l6 s12 m12 center  animate__animated animate__slideInDown">
+            <img src="img/stake (1).svg" alt="" style="width: 100%;">
+        </div>
+    </div>
+</div>
+
+<div style="background-color:#D3FFBB;padding: 40px;" class="container">
+<div class="container">
+    <div class="row" >
+        <div class="col l4 s12 m12 center">
+            <div><img src="img/icon-secure (1).svg" alt=""></div>
+            <b  style="font-weight: 100px;">Secured</b>
+            <p style="font-size: 20px;">Your private keys are encrypted and never leave your device. You fully control your funds.</p>
+        </div>
+        <div class="col l4 s12 m12 center">
+            <div><img src="img/icon-anonym (1).svg" alt=""></div>
+            <b style="font-weight: 100px;">Anonymous</b>
+            <p style="font-size: 20px;">No accounts, no verification, no KYC for basic features in the wallet. No one can block your funds.</p>
+        </div>
+        <div class="col l4 s12 m12 center">
+            <div><img src="img/icon-support.svg" alt=""></div>
+            <b style="font-weight: 100px;">24/7 live support</b>
+            <p style="font-size: 20px;">Our support is always ready to help you. Get quick and efficient response via live chat or email.</p>
+        </div>
+
+    </div>
+        <div class="center">
+            <a href="" class="btn blue white-text" style="border-radius: 20px;">Get Wallet</a>
+        </div>
+</div>
+</div>
+
+<div class="container center">
+    <h1 style="font-size: 45px; font-weight: 700;">Supported Assets</h1>
+    <div class="row">
+        <div class="col l12 s1.5 m1.5">
+            <img src="img/asset/assets-1.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="col l12 s1.5 m1.5">
+            <img src="img/asset/assets-1.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="col l12 s1.5 m1.5">
+            <img src="img/asset/assets-1.jpg" alt="" style="width: 100%;">
+        </div>
+    </div>
+</div>
+<div style="background-color: #349400; padding: 40px;" class="center container">
+    <div class="container center">
+        <h1 style="font-size: 45px; font-weight: 700;color: white;">Download Philzchain</h1>
+    </div>
+    <div class="row" style="padding-top: 30px;">
+        <div class="col l12 center" >
+            <img src="img/icons/windows-icon (1).svg" alt=""style="padding-left: 70px;">
+            <img src="img/icons/macos-icon (1).svg" alt=""style="padding-left: 70px;">
+            <img src="img/icons/debian-icon (1).svg" alt=""style="padding-left: 70px;">
+            <img src="img/icons/ubuntu-icon (1).svg" alt=""style="padding-left: 70px;">
+            <img src="img/icons/fedora-icon (1).svg" alt=""style="padding-left: 70px;">
+        </div>
+    </div>
+
+    <!-- <div class="row" style="padding-bottom: 30px; text-align: center;" > -->
+        <hr>
+        <div class="col 12" style="text-align: center;">
+            <img src="img/google-play-icon.svg" alt="">
+            <img src="img/appstore-icon.svg" alt="">
+            <img src="img/DownloadAPK andriod.svg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="container center" style="margin-top: 100px;">
+    <b style="font-size: 45px;">Our Partners</b>
+    <div class="row"><br><br>
+        <div class="col l3 s12 m12">
+            <img src="img/99-bitcoins.webp" alt="" >
+        </div>
+        <div class="col l3 s12 m12">
+            <img src="img/unstoppable-domains.webp" alt="" style="width: 100%;">
+        </div>
+        <div class="col l3 s12 m12">
+            <img src="img/change_now.webp" alt="" >
+        </div>
+        <div class="col l3 s12 m12">
+            <img src="img/coin_market_cap.webp" alt="" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col l3 s12 m12">
+            <img src="img/Surfchain - Best Cryptocurrency Wallet for Mobile, Desktop_ Bitcoin and Altcoins_files/ethplorer.webp" alt="">
+        </div>
+        <div class="col l3 s12 m12">
+            <img src="img/partner-bbworldwide.webp" alt="" style="width: 100%;">
+        </div>
+        <div class="col l3 s12 m12">
+            <img src="img/partner-blockchair.webp" alt="" >
+        </div>
+        <div class="col l3 s12 m12">
+            <img src="img/partner-simplex.webp" alt="" >
+        </div>
+    </div>
+</div>
+
+<div class="container center" style="margin-top: 100px;">
+    <b style="font-size: 45px;">FAQs</b>
+    <p><a href="" style="font-size: 30px;font-weight: 500; color: #349400;">Have questions about the wallet? </a></p>
+</div>
+<div class="container center">
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header">
+               How does Philzchain Wallet works?
+            </div>
+            <div class="collapsible-body">
+                <span> <p>
+                    Philzchain Wallet is a non-custodial decentralized wallet. It means that you own your backup phrase and private keys, thus, you fully control your funds. We have no access to your wallet and your sensitive information. Your 12-words backup and private keys are stored locally on your device and strongly encrypted. Moreover, your funds are not located in the wallet itself, there are safely stored on the blockchain. Philzchain Wallet connects directly to the blockchain nodes and shows the information about your balances, transaction history and everything you see in the wallet. It also allows you to perform transactions on the blockchain. Surfchain Wallet also provides you with exchange and buying crypto services with the help of our partners.</p>
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                What is 12-words backup?
+            </div>
+            <div class="collapsible-body">
+                <span><p>
+                    Your 12-word backup is the key to your wallet. It has essential meaning for keeping your funds safe. Think about it as a login to your bank account: whoever owns it, can access your funds. 12-word backup is a master key that is provided to you when you first create the wallet. Public and private addresses for each coin are derived with specific algorithms from your backup. If you keep your 12-word backup safe, your wallet is safe. We recommend to store it offline in two different places. Never share it with anybody, even the members of our team!</p>
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                Is Surfchain Wallet safe?
+            </div>
+            <div class="collapsible-body">
+                <span><p>
+                Surfchain Wallet is an interface that gives you access to your funds on the blockchain. The most important information, such as your private keys and backup phrase, is stored locally on your device and is strongly encrypted. The wallet and all the operations within it are protected with a password. Surfchain Wallet doesn't store any of your private data, making you the exclusive owner of your keys and funds. Answering the question, your wallet is safe if you follow these basic safety rules: Keep your device safe. If your device is compromised, the wallet can be compromised too. Never share your 12-word backup or private keys with anybody. Your backup is like a key to your wallet, whoever owns it, owns the funds. Take your passwords seriously. Make a unique and strong password for Surfchain Wallet and store it in a trusted password manager.</p>
+                </span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="center container">
+    <div>
+        <p style="font-weight: 500;font-size: 30px; color: #349400;">
+            Even more cool features are coming
+        </p>
+    </div>
+    <div>
+        <input type="password" id="searchInput" placeholder="Your email">
+        <a href="" class="btn" style="background-color: #349400; border-radius: 5px;"> Subscribe</a>
+    </div>
+    <br><br>
+    
+</div>
+
+
+<footer style="background-color: #349400; margin-bottom: 0%;" >
+    <div class="container" style="padding-top: 50px; margin-bottom: 0%;" >
+        <div class="row">
+            <div class="col l4 m4 s4">
+                
+                <img src="img/mine logo/philzchain.png" alt="" style="width:150px; padding-top: 10px;">
+                <br>
+                <b style="color: white; font-size: larger;">support@philzchain.net</b>
+                <br>
+                <a href="" class="btn" style="border-radius: 100%;width: 30px; height: 30px;background-color: #ffffff;"><i class="fa-brands fa-twitter" style="color: #74C0FC; position: relative; right: 8px;"></i></a>
+                <a href="" class="btn white" style="border-radius: 100%;width: 30px; height: 30px;"><i class="fa-brands fa-telegram" style="color: #74C0FC; position: relative; right: 8px;"></i></a>
+                <a href="" class="btn white" style="border-radius: 100%;width: 30px; height: 30px;"><i class="fa-brands fa-facebook" style="color: #74C0FC; position: relative; right: 8px;"></i></i></a><br>
+                <div class="col ">
+                    <a href=""><img src="img/google-play-icon.svg" alt=""></a>
+                    <a href=""><img src="img/appstore-icon.svg" alt=""></a>
+                </div>
+            </div> 
+            
+            <div class="col l4 m12 s12">
+                <h6 style="font-weight: bolder;color: #ffffff;">Philzchain Wallet</h6>
+                <l  style="color: #ffffff;">
+                    <li><a href="" style="color: #ffffff;">Support</a></li>
+                    <li><a href="" style="color: #ffffff;">Buy</a></li>
+                    <li><a href="" style="color: #ffffff;">Stake</a></li>
+                    <li><a href="" style="color: #ffffff;">About</a></li>
+                    <li><a href="" style="color: #ffffff;">Login</a></li>
+                    <li><a href="" style="color: #ffffff;">Signup</a></li>
+                    <li><a href="" style="color: #ffffff;">Download</a></li>
+
+                </l>
+            </div>
+            <div class="col l4 m12 s12">
+                <h6 style="font-weight: bolder;color: #ffffff; font-size: larger;">Assets</h6>
+                <l  style="color: #ffffff;">
+                    <li><a href="" style="color: #ffffff;">Bitcoin Wallet</a></li>
+                    <li><a href="" style="color: #ffffff;">Ethereum Wallet</a></li>
+                    <li><a href="" style="color: #ffffff;">Tether USDT Wallet</a></li>
+                    <li><a href="" style="color: #ffffff;">Litcoin Wallet</a></li>
+                    <li><a href="" style="color: #ffffff;">Tron Wallet</a></li>
+                    <li><a href="" style="color: #ffffff;">Solana Wallet</a></li>
+                    <li><a href="" style="color: #ffffff;">BNB Wallet</a></li>
+                </l>
+            </div>
+        </div>
+    </div>
+
+    <div class="container col l4 s4 m4 center" style="margin-bottom: 0%;padding-bottom: 50px;">
+        <br>
+        <hr>
+        <p style="margin-bottom: 0%;color: #ffffff;font-size: larger;" class="container center">
+            We also note that Philzchain Wallet is not the creator of and does not have any control over any of the virtual currencies that the Philzchain Desktop and Mobile Wallet Applications allow Philzchain Wallet’ customers to use. Philzchain Wallet’ customers balance and actual transaction history are supported by each cryptocurrency blockchain explorer. Philzchain Wallet does not collect or store any private keys, backup phrases or passwords. Further, Philzchain Wallet does not hold, collect, or transfer any assets from or to its customers wallets in any form.
+        </p>
+    </div>
+
+    <div class="container hide-on-med-and-down" style="margin-bottom: 0%; padding-bottom: 30px;">
+        <hr>
+        <div class="row" style="margin-bottom: 0%;">
+            <div class="col l4 s4 m4">
+                <b style="color: #ffffff;margin-bottom: 0%;"> ©  2024 All Right Reserved</b>
+               
+            </div>
+        </div>
+    </div>
+    <div class="container hide-on-large-only center" style="margin-bottom: 0%; padding-bottom: 30px;">
+        <hr>
+        <div class="center" style="margin-bottom: 0%;">
+            <div class="col l4 s4 m4">
+                <b style="color: #ffffff;margin-bottom: 0%;"> ©  2024 All Right Reserved</b>
+               
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.collapsible').collapsible();
+        $('.slider').slider();
+        $('.sidenav').sidenav();
+        // $('.modal').modal();
+        // $('.carousel').carousel();
+        $('.dropdown-trigger').dropdown();
+        // $('.materialboxed').materialbox();
+        });
+
+        var splide = new Splide( '.splide', {
+  perPage: 3,
+  focus  : 0,
+  omitEnd: true,
+  type   : 'loop',
+  autoplay: 'true',
+  Interval:'100',
+} );
+
+splide.mount();
+
+    </script>
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+<script>
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.querySelector('.preloader').style.display = 'none';
+
+            document.getElementById('content-placeholder').style.display = 'block';
+        }, 2000);
+    });
+</script>
+
+padding-top: 10px;
+</body>
+</html>
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content-placeholder" style="position: absolute; width: 100%;">
+        <div class="preloader">
+            <img src="img/Loading GIF.gif" width="100%"  alt="">
+        </div>
+
+    </div>
+        <p> HELLO WORLD </p>
+    
+
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.querySelector('.preloader').style.display = 'none';
+
+                document.getElementById('content-placeholder').style.display = 'block';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

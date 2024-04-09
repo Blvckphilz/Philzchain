@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+</head>
+<body>
+
+
+     <a href="#modal1" class="modal-trigger"> check here</a>
+
+        <div class="modal container green" id="modal1">
+            <div class="header container">
+                <img src="img/99-bitcoins.webp" alt="" style="width: 30px;">
+                <b>Signin</b>
+            </div>
+            <div class="modal-content container center">
+                <input type="email" placeholder="Email address" style=" border-radius: 10px;
+                border-style: solid; height: 40px;">
+                <input type="password" placeholder="Password" style="border-style: solid; border-radius: 10px; height: 40px;">
+                <input type="checkbox">
+                <a href="" class="btn ">Sign in</a>
+               <p> No account yet? </p><a href="">Sign up</a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.slider').slider();
+        $('.sidenav').sidenav();
+        $('.modal').modal();
+        $('.carousel').carousel();
+        $('.dropdown-trigger').dropdown();
+        $('.materialboxed').materialbox();
+        });
+    </script>
+</body>
+</html>

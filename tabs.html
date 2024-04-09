@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col l12">
+            <ul class="tabs">
+                <li class="tab col l3">
+                    <a href="#test1">
+                        test 1
+                    </a>
+                </li>
+                <li class="tab col l3">
+                    <a href="#test2">
+                        test 2
+                    </a>
+                </li>
+                <li class="tab col l3">
+                    <a href="#test3">
+                        test 3
+                    </a>
+                </li>
+            </ul>
+            <div class="col l12" id="test1">
+                this is a dummy text 
+            </div>
+            <div class="col l12 " id="test2" style="text-align: right;">
+                this is a dummy text 2222
+            </div>
+            <div class="col l12 center" id="test3">
+                this is a dummy text  33333
+            </div>
+        </div>
+        <div>
+            <audio src="" controls></audio>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.slider').slider();
+        $('.tabs').tabs();
+        // $('.modal').modal();
+        // $('.carousel').carousel();
+        $('.dropdown-trigger').dropdown();
+        // $('.materialboxed').materialbox();
+        });
+
+        var splide = new Splide( '.splide', {
+  perPage: 3,
+  focus  : 0,
+  omitEnd: true,
+  type   : 'loop',
+  autoplay: 'true',
+  Interval:'100',
+} );
+
+splide.mount();
+
+    </script>
+
+</body>
+</html>

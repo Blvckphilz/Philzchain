@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+</head>
+<body>
+    <div class="col l12 container center">
+        <ul class="tabs">
+            <li class="tab l4">
+                <a href="#audio" style="background-color: blue;color: white;">
+                    AUDIO <img src="img/icons/curve down.svg" alt="" style="position: relative ; top: 10px;">
+                </a>
+            </li>
+            <li class="tab l4">
+                <a href="#picture" style="background-color: blue;color: white;">
+                    PICTURE <img src="img/icons/curve down.svg" alt="" style="position: relative ; top: 10px;">
+                </a>
+            </li>
+            <li class="tab l4">
+                <a href="#text" style="background-color: blue;color: white;">
+                    TEXT <img src="img/icons/curve down.svg" alt="" style="position: relative ; top: 10px;">
+                </a>
+            </li>
+        </ul>
+
+        <div class="col l12" id="audio">
+            <audio src="audio/01-Nasty-C-King-Shit-(BazeMack.com).mp3" controls></audio>
+            <br>
+            <audio src="audio/02-Nasty-C-Steve-Biko-(BazeMack.com).mp3" controls></audio>
+            <br>
+            <audio src="audio/03-Nasty-C-Thats-Hard-(BazeMack.com).mp3" controls></audio>
+            <br>
+            <audio src="audio/04-Nasty-C-Overpriced-Steak-(BazeMack.com).mp3"  controls></audio>
+        </div>
+        <div class="col l12" id="picture">
+            <div class="row">
+                <div class="col l3"><br>
+                    <img src="img/Pink lambo.jpg" alt="" style="width: 100%;">
+                </div>
+
+                 <div class="col l3"><br>
+                    <img src="img/Royce13.jpg" alt="" style="width: 100%;">
+                </div>
+
+                <div class="col l3"><br>
+                    <img src="img/GREEN BUGGATI.jpg" alt="" style="width: 100%;">
+                </div>  
+                
+                <div class="col l3"><br>
+                    <img src="img/Pink lambo.jpg" alt="" style="width: 100%;">
+                </div>
+                
+            </div>
+
+
+
+
+    
+        </div>
+        <div class="col l12" id="text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam temporibus, eius sed sint aspernatur fugit quaerat in esse ipsa laudantium ut possimus, quis fugiat! Repellat maxime itaque iusto maiores modi natus neque rerum perferendis. Eum ut doloribus possimus necessitatibus repudiandae autem, est vero placeat voluptates beatae architecto debitis iusto tempore?</p>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam temporibus, eius sed sint aspernatur fugit quaerat in esse ipsa laudantium ut possimus, quis fugiat! Repellat maxime itaque iusto maiores modi natus neque rerum perferendis. Eum ut doloribus possimus necessitatibus repudiandae autem, est vero placeat voluptates beatae architecto debitis iusto tempore?</p>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam temporibus, eius sed sint aspernatur fugit quaerat in esse ipsa laudantium ut possimus, quis fugiat! Repellat maxime itaque iusto maiores modi natus neque rerum perferendis. Eum ut doloribus possimus necessitatibus repudiandae autem, est vero placeat voluptates beatae architecto debitis iusto tempore?</p>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.slider').slider();
+        $('.tabs').tabs();
+        });
+
+        var splide = new Splide( '.splide', {
+  perPage: 3,
+  focus  : 0,
+  omitEnd: true,
+  type   : 'loop',
+  autoplay: 'true',
+  Interval:'100',
+} );
+
+splide.mount();
+
+    </script>
+
+</body>
+</html>

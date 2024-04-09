@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 100%;
+      top: 0;
+      left: -250px;
+      background-color: #111;
+      padding-top: 20px;
+      transition: 0.5s;
+    }
+
+    #sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    #sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    #content {
+      margin-left: 0;
+      padding: 16px;
+      transition: margin-left 0.5s;
+    }
+
+    @media screen and (max-width: 768px) {
+      #sidebar {
+        left: 0;
+        z-index: 9900%;
+      }
+
+      #content {
+        margin-left: 250px;
+      }
+    }
+
+    #menu-toggle {
+      font-size: 24px;
+      cursor: pointer;
+      color:black;
+      padding: 10px;
+      position: fixed;
+      left: 20px;
+      top: 20px;
+    }
+    H2, p {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="sidebar">
+    <a href="#">Home</a>
+    <a href="index.html">Categories</a>
+    <a href="#">Products</a>
+    <a href="#">Cart</a>
+    <a href="#">Account</a>
+  </div>
+
+  <div id="content">
+    <!-- Your main content goes here -->
+    <h2>Welcome to our Shopping Site!</h2>
+    <p>This is where your product listings, featured items, and other content will go.</p>
+  </div>
+
+  <div id="menu-toggle">&#9776;</div>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var sidebar = document.getElementById('sidebar');
+      var content = document.getElementById('content');
+      if (sidebar.style.left === '0px') {
+        sidebar.style.left = '-250px';
+        content.style.marginLeft = '0';
+      } else {
+        sidebar.style.left = '0px';
+        content.style.marginLeft = '250px';
+      }
+    });
+  </script>
+
+</body>
+</html>

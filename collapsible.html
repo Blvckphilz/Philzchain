@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+</head>
+<body>
+<div class="center container">   
+    <ul class="collapsible center container">
+        <li>
+            <div class="collapsible-header">
+                Pictures
+            </div>
+            <div class="collapsible-body"  style="background-color: black;">
+                <div class="row">
+                    <div class="col l4">
+                        <img src="img/GREEN BUGGATI.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="col l4">
+                        <img src="img/Pink lambo.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="col l4">
+                        <img src="img/RRED BMW - Copy.jpg" alt="" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                Audio
+            </div>
+            <div class="collapsible-body"  style="background-color: black;"><br>
+                <audio src="" controls></audio>
+                <br>
+                <audio src="" controls></audio>
+                <br>
+                <audio src="" controls></audio>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                Text
+            </div>
+            <div class="collapsible-body"  style="background-color: black; color: white;"><br>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod animi perspiciatis esse ea repudiandae eius maiores, obcaecati aliquam error, et mollitia magnam voluptates nulla sed libero impedit iste porro sunt.</p>
+                 <br>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod animi perspiciatis esse ea repudiandae eius maiores, obcaecati aliquam error, et mollitia magnam voluptates nulla sed libero impedit iste porro sunt.</p>
+                 <br>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod animi perspiciatis esse ea repudiandae eius maiores, obcaecati aliquam error, et mollitia magnam voluptates nulla sed libero impedit iste porro sunt.</p>
+            </div>
+        </li>
+
+    </ul>
+</div>     
+
+
+
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.collapsible').collapsible();
+        $('.tabs').tabs();
+        // $('.modal').modal();
+        // $('.carousel').carousel();
+        $('.dropdown-trigger').dropdown();
+        // $('.materialboxed').materialbox();
+        });
+
+        var splide = new Splide( '.splide', {
+  perPage: 3,
+  focus  : 0,
+  omitEnd: true,
+  type   : 'loop',
+  autoplay: 'true',
+  Interval:'100',
+} );
+
+splide.mount();
+
+    </script>
+</body>
+</html>
